@@ -1,0 +1,36 @@
+# Capitulo 4 - Listas Encadeadas
+
+=> Uma lista encadeada é uma representação de uma sequencia de objetos na memória do computador. 
+Cada elemento da sequencia é armazenado em uma célula da lista.. As células armazenam elementos consecutivos da sequencia não ficam mecessariamente em posições consecutivas da memória.
+
+## 4.1 Definição
+
+Uma lista encadeade é uma sequencia de registros que chamamos de células. cada célula contem um objeto de determinado tipo e o endereço da célula sequinte. No caso da última
+O endereço é NULL.
+
+- A estrutura das células pode ser definida assim:
+
+struct cel
+{
+    int conteúdo;
+    sctruct cel *seg;
+}
+
+- É conveniênte tratar as células como um novo tipo de dados que chamaremos célula;
+    typedef struct cel célula;
+
+- Uma célula c e um ponteiro p para uma célula podem agora ser declarados
+    célula c;
+    célula *p;
+
+- Se c.conteúdo é o conteúdo dea célula e c.seg é o endereço da célula seguinte. 
+- Se p é o endereço de uma célula então p->conteúdo é o conteúdo da célula e p-> é o endereço da célula seguinte. Se p é o endereço da última célula da lista, então p-segvale NULL.
+
+- p é o endereço da primeira célula de uma lista;
+
+== A seguinte observação coloca em evidência a natureza recursiva das listas encadeadas. Para toda lista encadeada p:
+    1. p é NULL ou
+    2. p->seg é uma lista encadeada
+Muitos algoritmos que manipulam listas ficam mais simples quando escritos em estilo recursivo
+-----> Exercício 4.1.1
+
