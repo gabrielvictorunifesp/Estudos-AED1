@@ -13,7 +13,7 @@ O endereço é NULL.
 struct cel
 {
     int conteúdo;
-    sctruct cel *seg;
+    struct cel *seg;
 }
 
 - É conveniênte tratar as células como um novo tipo de dados que chamaremos célula;
@@ -32,5 +32,14 @@ struct cel
     1. p é NULL ou
     2. p->seg é uma lista encadeada
 Muitos algoritmos que manipulam listas ficam mais simples quando escritos em estilo recursivo
+/* uma variável criada dentro de chaves {}, é liberada (Free) após o final das chaves.
+Enquanto uma alocação de memória (Malloc) não.
+/*
+
 -----> Exercício 4.1.1
+
+** Estudar struct
+
+# Capitulo 5 - Filas
+
 
