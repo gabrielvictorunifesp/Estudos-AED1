@@ -1,4 +1,4 @@
 /* Dizemos que uma célula D é sucessora de uma célula C se C.seg=&D. Nas mesmas condições, dizemos que C é antecessora de D.
 Um ciclo é uma sequência de células tal que Ci+1 é sucessora de Ci, para i - 1, 2..., k-1 e Ci é sucessora de Ck.
- Mostre 
+
 */

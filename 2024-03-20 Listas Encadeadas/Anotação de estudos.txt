@@ -31,15 +31,10 @@ struct cel
 == A seguinte observação coloca em evidência a natureza recursiva das listas encadeadas. Para toda lista encadeada p:
     1. p é NULL ou
     2. p->seg é uma lista encadeada
-Muitos algoritmos que manipulam listas ficam mais simples quando escritos em estilo recursivo
-/* uma variável criada dentro de chaves {}, é liberada (Free) após o final das chaves.
-Enquanto uma alocação de memória (Malloc) não.
-/*
-
+    
+    Muitos algoritmos que manipulam listas ficam mais simples quando escritos em estilo recursivo
 -----> Exercício 4.1.1
 
-** Estudar struct
+## 4.2 Listas com cabesa e sem cabeça
 
-# Capitulo 5 - Filas
-
-
+-uma lista encadeada pode ser vista de duas maneiras
